@@ -26,12 +26,12 @@ request.onsuccess = function(event) {
   };
 
 function saveRecord(record) {
-    // open a new transaction with the database with read and write permissions 
+    // open db  transaction, specify read and write permissions
     const transaction = db.transaction(['budget_store'], 'readwrite');
   
     // access the object store for `budget_store`
     const budgetObjectStore = transaction.objectStore('budget_store');
   
-    // add record to your store with add method
+    // add method inserts 'record' into 'budget_store'
     budgetObjectStore.add(record);
   }
