@@ -6,7 +6,7 @@ const path = require('path');
 
 const config = {
 
-    entry: './server.js',
+    entry: './public/js/index.js',
 
     output: {
         path: path.resolve(__dirname, 'dist'),
