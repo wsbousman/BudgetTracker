@@ -6,7 +6,7 @@ const path = require('path');
 
 const config = {
 
-    entry: './assets/js/script.js',
+    entry: './server.js',
 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -32,7 +32,7 @@ const config = {
             icons: [{
             src: path.resolve("./public/icons/icon-192x192.png"),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join("assets", "icons")
+            destination: './public/icons'
             }]
         })
       ],
